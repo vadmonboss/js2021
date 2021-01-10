@@ -1,73 +1,22 @@
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
 
+const presonalMovieBD = {
+    count: numberOfFilms,
+    movies: {},
+    actor: {},
+    genres: [],
+    privat: false
+};
 
+console.log(presonalMovieBD.count);
 
-console.log('arr' + " - object");
+const q1 = prompt("Одни из последних просмотренных фильмов?", ""),
+      q2 = prompt("На сколько оцените его?", ""),      
+      q11 = prompt("Одни из последних просмотренных фильмов?", ""),
+      q22 =  prompt("На сколько оцените его?", "");
 
-let incr = 20,
-    decr = 20;
+presonalMovieBD.movies[q1] = q2;
+presonalMovieBD.movies[q11] = q22;
 
-// ++incr;
-// --decr;
-
-console.log(incr++, decr--);
-console.log(incr, decr);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//alert('Vadmon lox');
-
-//const res = confirm('Ti tyt?');
-//console.log(res);
-
-//const answ = +prompt('Какой любимый мэмчик?', '322');
-//console.log(answ + 5);
-
-// const answers = [];
-
-// answers[0] = prompt('Ваше имя', '');
-// answers[1] = prompt('Ваше фамилия', '');
-// answers[2] = prompt('Ваш возраст', '');
-
-// //document.write(answers);
-// console.log(answers); 
-
-// const catgor = 'boys';
-// console.log(`https://htmlacademy.ru/${catgor}/5/view`);
-
-// const user = "Vadim";
-// alert(`Соси, ${user}`);
+console.log(presonalMovieBD);
